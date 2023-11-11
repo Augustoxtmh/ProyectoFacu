@@ -1,0 +1,26 @@
+body{
+    background: url(../Assets/Backgroud.jpg)no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.contenedor-2{
+    display: flex;
+    margin: 3vh 15vw 3vh 15vw;
+}
+
+.contenedor{
+    margin: 3vh 15vw 3vh 15vw;
+}
+
+.btn-pding
+{
+    padding: 5vh 3vw 5vh 3vw;
+}
+
+
+.titulo{
+    margin-left: 33vw;
+}

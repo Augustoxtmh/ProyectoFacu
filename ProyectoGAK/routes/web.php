@@ -13,10 +13,22 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/inicio', function () {
+Route::get('', function () {
     return view('welcome');
-})->name('inicio');
+})->name('login');
 
 Route::get('/facturas', function () {
     return view('facturas');
 });
+
+Route::get('/inicio', function () {
+    return view('inicio');
+})->name('inicio');
+
+Route::get('/pedidos', function () {
+    return view('pedidos');
+})->name('pedidos');
+
+Route::get('/stock', function () {
+    return view('stock');
+})->name('stock');

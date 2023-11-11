@@ -9,7 +9,7 @@
 <body>
     <section>
         <header>
-            <a href="{{ route('login') }}" class="btn btn-primary">Salir</a>
+            <a href="inicio" class="btn btn-primary">Salir</a>
         </header>
         <div class="row">
             <div class="Listado">

@@ -1,0 +1,98 @@
+body, h1, h2, h3, p, ul, li, form, label, input, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+}
+
+/* Estilos de la lista de stock */
+.Listado {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-right: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.Listado h2 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.Listado ul {
+    list-style: none;
+    padding: 0;
+}
+
+.Listado li {
+    margin-bottom: 10px;
+}
+
+/* Estilos de las opciones */
+.Opciones {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.Opciones h2 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.Opciones form {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 12px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #45a049;
+}

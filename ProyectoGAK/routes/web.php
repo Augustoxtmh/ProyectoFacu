@@ -20,3 +20,11 @@ Route::get('/', function () {
 Route::get('/facturas', function () {
     return view('facturas');
 });
+
+Route::get('/Stock', function() {
+    return view('Stock');
+});
+
+Route::get('/Pedidos', function() {
+    return view('Pedidos');
+});

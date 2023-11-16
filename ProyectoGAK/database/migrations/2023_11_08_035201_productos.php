@@ -25,3 +25,19 @@ return new class extends Migration
         Schema::dropIfExists('productos');
     }
 };
+    /**
+     * Run the migrations.
+     */
+    public function up(): void
+    {
+        //
+    }
+
+    /**
+     * Reverse the migrations.
+     */
+    public function down(): void
+    {
+        //
+    }
+};

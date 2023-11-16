@@ -33,3 +33,22 @@
         <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     </body>
 </html>
+
+
+
+<script>
+
+  function ejec(){
+    Swal.fire({
+      title: 'Cerrar sesion',
+      text: "Seguro que quiere cerrar sesion?",
+      showDenyButton: true,
+      showCancelButton: false,
+      confirmButtonText: 'Si',
+      denyButtonText: `No`,
+    }).then((result) => {
+      /* Read more about isConfirmed, isDenied below */
+    })
+  }
+
+</script>

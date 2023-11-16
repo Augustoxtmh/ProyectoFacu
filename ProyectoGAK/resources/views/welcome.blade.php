@@ -12,7 +12,7 @@
         <section>
             <div class="form-box">
                 <div>
-                    <form action="facturas">
+                    <form action="inicio">
                         <h2>Venecia Modas</h2>
                         <div class="inputbox">
                             <ion-icon name="person-outline"></ion-icon>

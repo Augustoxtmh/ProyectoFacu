@@ -6,19 +6,30 @@ use Illuminate\Support\Facades\Schema;
 
 return new class extends Migration
 {
-    /**
-     * Run the migrations.
-     */
+
+    public function up(): void
+    {
+        Schema::create('productos', function (Blueprint $table) {
+            $table->id();
+            $table->string('nombre_producto');
+            $table->text('descripcion');
+            $table->float('precio');
+            $table->integer('stock');
+            $table->timestamps(); // Si se desea incluir las marcas de tiempo (created_at, updated_at)
+        });
+    }
+
+
+    public function down(): void
+    {
+        Schema::dropIfExists('productos');
+    }
+
+    /*    
     public function up(): void
     {
         //
     }
+    */
 
-    /**
-     * Reverse the migrations.
-     */
-    public function down(): void
-    {
-        //
-    }
 };

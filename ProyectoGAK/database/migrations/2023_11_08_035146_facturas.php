@@ -11,14 +11,17 @@ return new class extends Migration
      */
     public function up(): void
     {
-        //
+        Schema::create('facturas', function(Blueprint $table){
+            $table->id();
+            $table->integer('id_venta');
+            $table->date('fecha_factura');
+            $table->String('detalles');
+            $table->timestamps();
+        });
     }
 
-    /**
-     * Reverse the migrations.
-     */
     public function down(): void
     {
-        //
+        Schema::dropIfExists('facturas');
     }
 };

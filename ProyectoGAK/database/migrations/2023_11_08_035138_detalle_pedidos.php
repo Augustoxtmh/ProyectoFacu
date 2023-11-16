@@ -11,7 +11,14 @@ return new class extends Migration
      */
     public function up(): void
     {
-        //
+        Schema::create('detalle_pedidos', function(Blueprint $table){
+            $table->id();
+            $table->integer('id_pedido');
+            $table->integer('id_vestidos');
+            $table->integer('cantidad');
+            $table->double('subtotal');
+            $table->timestamps();
+        });
     }
 
     /**
@@ -19,6 +26,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        //
+        Schema::dropIfExists('detalle_pedidos');
     }
 };

@@ -11,7 +11,15 @@ return new class extends Migration
      */
     public function up(): void
     {
-        //
+        Schema::create('clientes', function (Blueprint $table) {
+            $table->id();// Integer-Unsigned-Increment
+            $table->String('Nombre');//varchar
+            $table->String('Apellido');//varchar
+            $table->String('Direccion');//varchar
+            $table->String('Correo');//varchar
+            $table->String('Telefono');//varchar
+            $table->timestamps();//created_at updated_at
+        });
     }
 
     /**
@@ -19,6 +27,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        //
+        Schema::dropIfExists('clientes');
     }
 };

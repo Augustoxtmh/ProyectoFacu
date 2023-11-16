@@ -11,7 +11,14 @@ return new class extends Migration
      */
     public function up(): void
     {
-        //
+        Schema::create('venta', function (Blueprint $table) {
+            $table->id();
+            $table->integer('id_cliente');
+            $table->date('fecha_venta');
+            $table->double('total');
+            $table->timestamps();
+        });
+
     }
 
     /**
@@ -19,6 +26,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        //
+        Schema::dropIfExists('venta');
     }
 };

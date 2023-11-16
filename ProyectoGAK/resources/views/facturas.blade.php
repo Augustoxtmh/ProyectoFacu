@@ -64,7 +64,6 @@
 
               <!--
                 Hacer el foreach con los resultados
-
               -->
           </table>
   

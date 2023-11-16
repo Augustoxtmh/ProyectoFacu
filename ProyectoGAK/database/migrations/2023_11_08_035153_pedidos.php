@@ -11,14 +11,17 @@ return new class extends Migration
      */
     public function up(): void
     {
-        //
+        Schema::create('pedidos', function (Blueprint $table) {
+            $table->id();
+            $table->integer('id_cliente');
+            $table->date('fecha_pedido');
+            $table->string('estado_pedido');
+            $table->timestamps();
+        });
     }
 
-    /**
-     * Reverse the migrations.
-     */
     public function down(): void
     {
-        //
+        Schema::dropIfExists('pedidos');
     }
 };
